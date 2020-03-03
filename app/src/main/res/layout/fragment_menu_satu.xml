@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MenuSatuFragment">
+
+        <Button
+            android:id="@+id/tv_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/tambah"
+            app:layout_constraintBottom_toBottomOf="@+id/tb_kurang"
+            app:layout_constraintStart_toEndOf="@+id/tv_kuantitas"
+            app:layout_constraintTop_toTopOf="@+id/tb_kurang" />
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/pemesanan_makanan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_makanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/kue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@+id/tv_judul"
+            app:layout_constraintTop_toBottomOf="@+id/tv_judul" />
+
+        <Button
+            android:id="@+id/tb_kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/kurang"
+            app:layout_constraintStart_toStartOf="@+id/tv_makanan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_makanan" />
+
+        <TextView
+            android:id="@+id/tv_kuantitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/kuantiti"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintBottom_toBottomOf="@+id/tb_kurang"
+            app:layout_constraintStart_toEndOf="@+id/tb_kurang"
+            app:layout_constraintTop_toTopOf="@+id/tb_kurang" />
+
+        <TextView
+            android:id="@+id/tv_topping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/topping"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/tv_makanan"
+            app:layout_constraintStart_toStartOf="@+id/tv_makanan"
+            app:layout_constraintTop_toBottomOf="@+id/tb_kurang" />
+
+        <CheckBox
+            android:id="@+id/cb_iceCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/ice_cream"
+            app:layout_constraintEnd_toEndOf="@+id/tv_topping"
+            app:layout_constraintStart_toStartOf="@+id/tv_topping"
+            app:layout_constraintTop_toBottomOf="@+id/tv_topping" />
+
+        <CheckBox
+            android:id="@+id/cb_ceres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/ceres"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_iceCream"
+            app:layout_constraintStart_toEndOf="@+id/cb_iceCream"
+            app:layout_constraintTop_toTopOf="@+id/cb_iceCream" />
+
+        <TextView
+            android:id="@+id/tv_rasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/rasa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/cb_iceCream"
+            app:layout_constraintStart_toStartOf="@+id/cb_iceCream"
+            app:layout_constraintTop_toBottomOf="@+id/cb_iceCream" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tv_rasa"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rasa">
+
+            <RadioButton
+                android:id="@+id/rb_coklat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coklat"
+                app:layout_constraintEnd_toEndOf="@+id/tv_rasa"
+                app:layout_constraintStart_toStartOf="@+id/tv_rasa"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rasa"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="73dp"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="325dp" />
+
+            <RadioButton
+                android:id="@+id/rb_vanila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vanila"
+                app:layout_constraintBottom_toBottomOf="@+id/rb_coklat"
+                app:layout_constraintStart_toEndOf="@+id/rb_coklat"
+                app:layout_constraintTop_toTopOf="@+id/rb_coklat"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="71dp"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="373dp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/in_nama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/nama_pemesan"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            android:importantForAutofill="no">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_beli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/beli"
+            app:layout_constraintStart_toStartOf="@+id/in_nama"
+            app:layout_constraintTop_toBottomOf="@+id/in_nama" />
+
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/reset"
+            app:layout_constraintBottom_toBottomOf="@+id/bt_beli"
+            app:layout_constraintStart_toEndOf="@+id/bt_beli"
+            app:layout_constraintTop_toTopOf="@+id/bt_beli" />
+
+        <TextView
+            android:id="@+id/tv_struk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/struk_pemeblian"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_beli" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_struk"
+            tools:text="nama pemebeli" />
+
+        <TextView
+            android:id="@+id/tv_kue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+            tools:text="kue" />
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

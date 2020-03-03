@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AplikasiHitung</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_satu">Menu Satu</string>
+    <string name="menu_dua">Menu Dua</string>
+    <string name="tambah">+</string>
+    <string name="pemesanan_makanan">Pemesanan Makanan</string>
+    <string name="kue">Kue</string>
+    <string name="kurang">-</string>
+    <string name="kuantiti">0</string>
+    <string name="topping">Topping</string>
+    <string name="ice_cream">Ice Cream</string>
+    <string name="ceres">Ceres</string>
+    <string name="rasa">Rasa</string>
+    <string name="coklat">Coklat</string>
+    <string name="nama_pemesan">Nama Pemesan</string>
+    <string name="beli">BELI</string>
+    <string name="reset">RESET</string>
+    <string name="struk_pemeblian">Struk Pemeblian</string>
+    <string name="share">SHARE</string>
+    <string name="vanila">Vanila</string>
+    <string name="about">About</string>
+    <string name="dina">DINA</string>
+</resources>
